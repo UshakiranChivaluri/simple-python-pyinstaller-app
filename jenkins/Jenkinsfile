@@ -27,11 +27,7 @@ pipeline {
             }
         }
         stage('Deliver') {
-            agent {
-                docker {
-                    image 'cdrx/pyinstaller-linux:python2'
-                }
-            }
+           
             steps {
                 sh 'sources/add2vals.py 100 200'
             }
