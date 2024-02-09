@@ -26,12 +26,6 @@ pipeline {
                 }
             }
         }
-        stage('Deliver') {
-           
-            steps {
-                sh 'sources/add2vals.py 100 200'
-            }
-           
-        }
+       
     }
-}
+
